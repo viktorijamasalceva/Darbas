@@ -10,7 +10,7 @@ def multiply(a, b):
 
 def divide(a, b):
     if b == 0:
-        return "Error: Division by zero!"  
+        return "Klaida"  
     return a / b
 #Artur
 test
