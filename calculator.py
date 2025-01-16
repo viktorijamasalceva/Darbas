@@ -13,7 +13,22 @@ def divide(a, b):
         return "error"  
     return a / b
 #Artur
-test
+def calculate(operation, a, b):
+	if operation == "add":
+		return add(a, b)
+	if operation == "substract":
+		return substract(a, b)
+	if operation == "multiply":
+		return multiply(a, b)
+	else:
+		raise ValueError("error")
+
+def get_input(prompt):
+	while True:
+		try:
+			return float(input(prompt))
+		exept ValueError:
+			print(error)
 
 
 
