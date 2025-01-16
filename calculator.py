@@ -18,7 +18,13 @@ test
 
 
 #Nastia
+print("Available operations: add, subtract, multiply, divide")
+a = input("Enter first number: ")  
+b = input("Enter second number: ") 
+operation = input("Enter operation: ")
 
+result = calculate(operation, a, b)  
+print(f"The result is: {result}")
 
 
 
