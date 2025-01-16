@@ -27,7 +27,7 @@ def get_input(prompt):
 	while True:
 		try:
 			return float(input(prompt))
-		exept ValueError:
+		except ValueError:
 			print(error)
 
 
