@@ -34,13 +34,15 @@ def get_number_input(prompt):
 
 #Nastia
 print("Available operations: add, subtract, multiply, divide")
-a = input("Enter first number: ")  
-b = input("Enter second number: ") 
+a = get_number_input("Enter first number: ")  
+b = get_number_input("Enter second number: ") 
 operation = input("Enter operation: ")
 
-result = calculate(operation, a, b)  
-print(f"The result is: {result}")
-
+try:
+	result = calculate(operation, a, b)
+	print(f"The result is: {result}")
+except ValueError as e:
+	print(e)
 
 
 
