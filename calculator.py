@@ -23,7 +23,7 @@ def calculate(operation, a, b):
 	else:
 		raise ValueError("error")
 
-def get_input(prompt):
+def get_number_input(prompt):
 	while True:
 		try:
 			return float(input(prompt))
