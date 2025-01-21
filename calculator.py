@@ -14,21 +14,24 @@ def divide(a, b):
     return a / b
 #Artur
 def calculate(operation, a, b):
-	if operation == "add":
-		return add(a, b)
-	if operation == "substract":
-		return substract(a, b)
-	if operation == "multiply":
-		return multiply(a, b)
-	else:
-		raise ValueError("error")
+    if operation == "add":
+        return add(a, b)
+    if operation == "subtract":
+        return subtract(a, b)  
+    if operation == "multiply":
+        return multiply(a, b)
+    if operation == "divide":
+        return divide(a, b)  
+    else:
+        raise ValueError("Error: Unknown operation")
 
 def get_number_input(prompt):
-	while True:
-		try:
-			return float(input(prompt))
-		except ValueError:
-			print(error)
+    while True:
+        try:
+            return float(input(prompt))
+        except ValueError:
+            print("Error: Invalid input, please enter a valid number")  
+
 
 
 
